@@ -2,15 +2,26 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 // PascalCase -> Primera letra en mayuscula ejemplo -> NombreComponente
+import { useState } from 'react'
+import './button-component.css'
 function ButtonComponent(props) {
-    // const numers = [2, 3, 4]
-    // const numbers2 = [5, 8, 9]
-    // numers.concat(numbers2)
-    // const titleMayus = title.toUpperCase()
+    const [isFollow, setIsFollow] = useState('Seguir')
+
+    const handleClick = () => {
+        if (isFollow === 'Seguir') {
+            setIsFollow('Siguiendo')
+        } else {
+            setIsFollow('Seguir')
+        }
+    }
+
     return (
-        <button>
+        <button className="button-component" onClick={handleClick}>
+            {/* {props.title === undefined && 'es undefined'}
             {props.title}
-            {props.icon}
+            {props.icon} */}
+            {isFollow}
+            {props.text}
         </button>
     )
 }

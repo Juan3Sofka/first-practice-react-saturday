@@ -1,0 +1,7 @@
+.button-component {
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-inline: 5px;
+}

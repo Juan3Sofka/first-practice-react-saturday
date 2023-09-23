@@ -2,6 +2,7 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import ButtonComponent from './components/ButtonComponent'
+import CardContainer from './components/CardContainer';
 
 // componente cardcontainer
 // componente followCard
@@ -10,21 +11,10 @@ function App(props) {
 
     return (
         // <div style={{ height: '50vh', background: 'red' }}>
-        <div>
-            <h1>Hola desde app</h1>
-            <h1>Tal Vez te guste</h1>
-            <ButtonComponent
-                title='Consultar'
-            ></ButtonComponent>
-
-            <ButtonComponent
-                title='sin icono'
-            />
-
-            <ButtonComponent
-                title='Me gusta'
-            />
-        </div>
+        <>
+            <CardContainer text={'para el boton'} />
+            {/* <ButtonComponent /> */}
+        </>
     )
 }
 
