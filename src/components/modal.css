@@ -1,0 +1,36 @@
+.modal{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	background-color: rgb(19, 17, 17);
+	width: 300px;
+	height: max-content;
+}
+
+.modal-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	
+	
+}
+
+.modal-title{
+        margin: 0 0 20px 0;
+	}
+
+.modal-text{
+		margin: 0 0 20px 0;
+
+	}
+
+.modal-btn{
+	padding: 6px 12px;
+	margin: 10px 0;
+	border-radius: 25px;
+	width: 70%;
+}

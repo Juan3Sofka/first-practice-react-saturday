@@ -4,24 +4,16 @@
 // PascalCase -> Primera letra en mayuscula ejemplo -> NombreComponente
 import { useState } from 'react'
 import './button-component.css'
-function ButtonComponent(props) {
-    const [isFollow, setIsFollow] = useState('Seguir')
-
-    const handleClick = () => {
-        if (isFollow === 'Seguir') {
-            setIsFollow('Siguiendo')
-        } else {
-            setIsFollow('Seguir')
-        }
-    }
+function ButtonComponent({ handleMouseEnter, handleMouseOut, className, text, handleClick}) {
+    
 
     return (
-        <button className="button-component" onClick={handleClick}>
+        <button className={`button-component ${className}`} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut} >
             {/* {props.title === undefined && 'es undefined'}
             {props.title}
             {props.icon} */}
-            {isFollow}
-            {props.text}
+            {text}
+            
         </button>
     )
 }

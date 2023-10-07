@@ -4,4 +4,28 @@
     border: none;
     outline: none;
     padding-inline: 5px;
+    width: fit-content;
+    height: 50px;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+
+.button-following_hover{
+    background-color: tomato;
+    border-radius: 10px;
+    border: 1px solid red;
+    outline: none;
+    padding-inline: 5px;
+    width: fit-content;
+    height: 50px;
+}
+.button_hover{
+    background-color: cyan;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    outline: none;
+    padding-inline: 5px;
+    width: fit-content;
+    height: 50px;
 }
